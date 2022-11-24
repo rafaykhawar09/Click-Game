@@ -1,0 +1,62 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+.carousel .slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.carousel .slider .slide {
+  width: 100%;
+  height: 100vh;
+}
+.carousel .slider .slide:nth-of-type(1) {
+  background: crimson;
+}
+.carousel .slider .slide:nth-of-type(2) {
+  background: aqua;
+}
+
+.item-list {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  list-style-type: none;
+}
+.item-list .item {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
+
+.slide {
+  position: relative;
+}
+.slide .sc-item {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  position: absolute;
+}
+.slide .sc-item:nth-of-type(1) {
+  top: 600px;
+  left: 400px;
+}/*# sourceMappingURL=style.css.map */
